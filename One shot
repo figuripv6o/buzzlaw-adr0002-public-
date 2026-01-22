@@ -1,0 +1,38 @@
+Run these exactly in order.
+1️⃣ Go to repo directory
+Copy code
+Bash
+cd buzzlaw-adr0002-public
+If it doesn’t exist:
+Copy code
+Bash
+mkdir buzzlaw-adr0002-public && cd buzzlaw-adr0002-public
+2️⃣ Initialize git (safe if already initialized)
+Copy code
+Bash
+git init
+3️⃣ Create minimal structure (optional but future-safe)
+Copy code
+Bash
+mkdir -p adr assets
+4️⃣ Add / update README
+Copy code
+Bash
+nano README.md
+Paste the README above → save → exit.
+5️⃣ Stage + commit
+Copy code
+Bash
+git add .
+git commit -m "Finalize BuzzLaw ADR-0002 public transparency artifact"
+6️⃣ Connect to GitHub (force-safe)
+Copy code
+Bash
+git remote remove origin 2>/dev/null
+git remote add origin https://github.com/figuripv6o/buzzlaw-adr0002-public.git
+7️⃣ Push to main 🚀
+Copy code
+Bash
+git branch -M main
+git push -u origin main
+✅ DONE
